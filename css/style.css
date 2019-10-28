@@ -1,6 +1,6 @@
 *{
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1rem;
     box-sizing: border-box;
 }
 .primary-text{
@@ -35,20 +35,20 @@ a{
 }
 .background{
 background: url(../img/background.jpg) no-repeat center center/cover;
-position: absolute;
+/* position: absolute;
 top: 0;
 left: 0;
 width: 100vw;
-height: 100vh;
+height: 100vh; */
 }
-.background::before{
-content: '';
+.layer{
+/* content: '';
 position: absolute;
 top: 0;
-left: 0;
-width: 100vw;
-height: 100vh;
-background: rgba(0,0,0,0.4);
+left: 0; */
+min-height: 100vh;
+background: url(../img/layer.png)no-repeat 0px 0px;
+background-size: cover;
 }
 body{
     margin:auto;
@@ -74,11 +74,12 @@ h1{
 #login-items .item input,
 #login-items .item .login{
     font-size: 1.1rem;
-    padding: 0.2rem;
+    padding: 1rem;
     border: none;
     border-radius: 4px;
     height: 2.5rem;
     width: 100%;
+    font-size: 15px;
 }
 #login-items .item a{
     width: 100%;
