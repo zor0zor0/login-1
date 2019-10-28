@@ -1,0 +1,60 @@
+.container{
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.btn{
+    padding: 0.5rem 2rem;
+    border: none;
+    cursor: pointer;
+}
+.btn-red{
+    background: red;
+    width: 100%;
+}
+.background{
+background: url(../img/background.jpg) no-repeat center center/cover;
+position: absolute;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+}
+
+body{
+    margin:auto;
+    align-items: center;
+}
+h1{
+   padding-top: 8rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+#login-items{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 1rem;
+}
+#login-items .item{
+    margin: 0.5rem;
+    line-height: 1.3rem;
+}
+#login-items .item input{
+    font-size: 1.1rem;
+    padding: 0.2rem;
+}
+#main-footer{
+    padding-top:10rem;
+}
+
+<a href="https://ibb.co/w7Q1V2B"><img src="https://i.ibb.co/NrNz5Gt/background.jpg" alt="background" border="0"></a>
