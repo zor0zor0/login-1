@@ -1,10 +1,22 @@
+*{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+}
+.primary-text{
+    font-weight:bold;
+
+}
 .container{
+    display: flex;
+    flex-direction: column;
     max-width: 800px;
     position: relative;
     margin: auto;
     color: #fff;
     justify-content: center;
     align-items: center;
+    text-align: center;
     text-align: center;
     height: 100vh;
 }
@@ -19,7 +31,7 @@ a{
 }
 .btn-red{
     background: red;
-    width: 100%;
+    padding: 0.2rem 0;
 }
 .background{
 background: url(../img/background.jpg) no-repeat center center/cover;
@@ -43,18 +55,60 @@ h1{
     display: flex;
     width: 100%;
     justify-content: center;
-    margin: 1rem;
+    align-items: center;
 }
 #login-items .item{
-    margin: 0.5rem;
     line-height: 1.3rem;
+    flex: 1;
+    padding: 0.5rem;
+    width: 100%;
 }
-#login-items .item input{
+#login-items .item input,
+#login-items .item .login{
     font-size: 1.1rem;
     padding: 0.2rem;
+    border: none;
+    border-radius: 4px;
+    height: 2.5rem;
+    width: 100%;
+}
+#login-items .item a{
+    width: 100%;
 }
 #main-footer{
     padding-top:10rem;
 }
-
-<a href="https://ibb.co/w7Q1V2B"><img src="https://i.ibb.co/NrNz5Gt/background.jpg" alt="background" border="0"></a>
+@media (max-width:415px){
+    #login-items{
+        flex-direction: column;
+        flex: 1;
+        max-width: 80%;
+        justify-content: center;
+    }
+    #login-items .item{
+        width: 100%;
+        padding: 0.2rem 0;
+    }
+    #main-footer{
+        padding-top:0.5rem;
+    }
+    h1{
+        padding-top: 2rem;
+         margin-bottom: 1rem;
+         font-size: 3rem;
+    }
+}
+@media (max-width:500px){
+    #login-items{
+        flex-direction: column;
+        flex: 1;
+        max-width: 80%;
+        justify-content: center;
+    }
+    #login-items .item input{
+        width: 100%;
+    }
+    #main-footer{
+        padding-top:1rem;
+}
+}
